@@ -53,7 +53,7 @@
             android:id="@+id/textTipAmount"
             android:layout_width="346dp"
             android:layout_height="53dp"
-            android:layout_marginTop="424dp"
+            android:layout_marginTop="420dp"
             android:text="@string/tip_amount"
             android:textAlignment="viewEnd"
             android:textSize="16sp"
