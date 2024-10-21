@@ -7,6 +7,10 @@ android {
     namespace = "com.hector.propinaproject"
     compileSdk = 34
 
+    dataBinding {
+        enable = true
+    }
+
     defaultConfig {
         applicationId = "com.hector.propinaproject"
         minSdk = 27

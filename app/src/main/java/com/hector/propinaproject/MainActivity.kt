@@ -11,11 +11,14 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.databinding.DataBindingUtil
+import com.hector.propinaproject.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("UseSwitchCompatOrMaterialCode", "MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -24,10 +27,6 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val Propina: RadioGroup = findViewById(R.id.radioGroup)
-        val RoundUp: Switch = findViewById(R.id.switchRound)
-        val Calcular: Button = findViewById(R.id.button)
-        val Result: TextView = findViewById(R.id.textTipAmount)
     }
 }
 
