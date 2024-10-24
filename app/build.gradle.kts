@@ -11,10 +11,6 @@ android {
         enable = true
     }
 
-    buildFeatures {
-        viewBinding = true
-    }
-
     defaultConfig {
         applicationId = "com.hector.propinaproject"
         minSdk = 27
